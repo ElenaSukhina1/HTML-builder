@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-let nameFile
+let nameFile;
 
 nameFile = path.join(__dirname, 'text.txt');
 
