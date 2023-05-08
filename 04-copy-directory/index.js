@@ -1,11 +1,14 @@
 const fs = require('fs');
 const path = require('path');
 
+let firstFile = path.join(__dirname, 'files');
+let copyFile = path.join(__dirname, 'files-copy');
+
 function copyDir() {
-  let firstFile = path.join(__dirname, 'files');
-  let copyFile = path.join(__dirname, 'files-copy');
+
   // console.log(copyFile);
   // console.log(firstFile);
+
   fs.mkdir(copyFile, { recursive: true }, err => {
     if (err) throw err;
   });
